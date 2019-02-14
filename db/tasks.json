@@ -1,8 +1,1 @@
-{
-    "tasks": [
-        {
-            "description": "study javascript",
-            "completed": false
-        }
-    ]
-}
+[{"description":"Study JavaScript","completed":false},{"description":"SAcar al doggo","completed":false}]
