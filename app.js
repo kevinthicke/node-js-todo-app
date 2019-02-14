@@ -3,8 +3,6 @@ const { createTask, listTasks } = require('./controller');
 
 const [ command ] = argv._;
 
-//console.log(argv)
-
 const menu = command => {
     switch(command) {
         case 'create': 
@@ -15,7 +13,7 @@ const menu = command => {
             break;
         case 'list':
             const pathName = './db/tasks.json';
-            listTasks(pathName).then(msg => console.log(msg)).catch(err => console.log(err));
+            listTasks(pathName).then(tasks => console.log(tasks));    
             break;
         default:  
             console.log(`command ${command} not valid`)
